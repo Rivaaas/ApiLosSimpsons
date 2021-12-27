@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-image: url(./IMG/Homero.jpg);
+  background-size: 80rem;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.div{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 90vh;
+ 
+}
+.div2{
+  display: flex;
+  justify-content: right;
+  
+
+}
+.botonGenerar{
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.cssQuote{
+  color: white;
+  text-align: center;
+}
+
+.divPersonaje{
+
+}
+
+.cssimg{
+  width: 200px;
+  height: 200px;
+  align-items: center;
 }
