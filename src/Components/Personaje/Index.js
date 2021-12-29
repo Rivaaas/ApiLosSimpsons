@@ -2,19 +2,29 @@ import React from 'react'
 
 
 const Personaje = ({ personaje }) => {
-console.log(personaje)
 
 
     return (
         <>
-            <div>
-                <h4>{personaje.quote}</h4>
-                <p>{personaje.character}</p>
-                <img src={personaje.image} />
+            <div className='container '>
+                <div className='d-flex flex-column align-items-center'>
+                    <div className='cuadro'>
+                        <h2>{personaje.quote}</h2>
+                        <h3>{personaje.character}</h3>
+                    </div>
+                    <img src={personaje.image} alt="" className='img-fluid w-25' />
+                </div>
             </div>
-
         </>
     )
 }
+Personaje.defaultProps = {
 
+    personaje: {
+        quote: "",
+        character: "",
+        image: "",
+        characterDirection: ""
+    }
+}
 export default Personaje

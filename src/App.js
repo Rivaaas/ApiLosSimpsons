@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import "./App.css";
 
 import { Button } from "react-bootstrap";
 import Personaje from "./Components/Personaje/Index";
+import Boton from "./Components/Boton/Index"
 function App() {
   const [personaje, guardarPersonaje] = useState();
 
@@ -11,23 +12,23 @@ function App() {
     const personaje = await api.json();
     guardarPersonaje(personaje[0]);
   };
+
+  useEffect( () =>{
+    consultarApi()
+  }, {}) 
   return (
     <>
-      <div className="container">
-        <div className="div2">
-          <Personaje personaje={personaje}/>
+      <div className="container ">
+        <div className="d-flex justify-content-center">
+          <Personaje personaje={personaje} />
         </div>
-        <div className="div row">
-           <Button
-            type="button"
-            className="btn btn-warning botonGenerar"
-            onClick={consultarApi}
-          >
-            Generar
-          </Button> 
-         
+
+        <div className="row justify-content-center">
+          <div className="col-sm-4 d-flex justify-content-center">
+          
+            <Boton/>
+          </div>
         </div>
-        
       </div>
     </>
   );

@@ -1,38 +1,24 @@
-body{
-  background-image: url(./IMG/Homero.jpg);
-  background-size: 80rem;
-  
+body {
+  background-size: 100%;
+  background-image: url("./IMG/homero.png");
+  opacity: 100;
 }
 
-.div{
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  height: 90vh;
- 
+.fondo {
+  opacity: 0.5;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10px;
 }
-.div2{
-  display: flex;
-  justify-content: right;
-  
 
-}
-.botonGenerar{
-  margin-bottom: 10px;
+.bt {
   width: 100px;
 }
 
-.cssQuote{
-  color: white;
-  text-align: center;
+.cuadro{
+    border: black 5px solid;
+    margin-top: 2%;
 }
 
-.divPersonaje{
-
-}
-
-.cssimg{
-  width: 200px;
-  height: 200px;
-  align-items: center;
-}
