@@ -26,7 +26,7 @@ function App() {
         <div className="row justify-content-center">
           <div className="col-sm-4 d-flex justify-content-center">
           
-            <Boton/>
+            <Boton consultarApi={consultarApi}/>
           </div>
         </div>
       </div>

@@ -1,13 +1,11 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
 
-const Boton = () => {
+import imgboton from '../../IMG/lossimp.png'
+
+const Boton = ({consultarApi}) => {
     return (
         <>
-            <Button>
-                
-            </Button>
-            
+           <img src={imgboton} className='imgboton' onClick={consultarApi} alt=""/>
         </>
     )
 }

@@ -2,6 +2,8 @@ body {
   background-size: 100%;
   background-image: url("./IMG/homero.png");
   opacity: 100;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px black;
 }
 
 .fondo {
@@ -18,7 +20,25 @@ body {
 }
 
 .cuadro{
-    border: black 5px solid;
+    border: rgb(251, 255, 7) 5px solid;
     margin-top: 2%;
 }
 
+.imgboton{
+  height: 90px;
+  border:rgb(255, 255, 255) solid;
+  box-shadow: rgb(255, 255, 255) 5px 10px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2rem;
+}
+
+
+.contcss{
+  max-width: 60%;
+  max-height: 445.67%;
+}
+
+.personajecss{
+  color: yellow;
+  -webkit-text-stroke: 1px black;
+}
